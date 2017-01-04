@@ -1,18 +1,22 @@
 <template>
-  <div class="home content">
-    <header>
-      <h1 v-for="line of headline">{{ line }}</h1>
-    </header>
-    <div class="content-col">
-      <strong>{{ firstPara }}</strong>
-      <p v-for="para in paragraphs">{{ para }}</p>
-      <social-media></social-media>
+  <div>
+    <sidebar></sidebar>
+    <div class="home content">
+      <header>
+        <h1 v-for="line of headline">{{ line }}</h1>
+      </header>
+      <div class="content-col">
+        <strong>{{ firstPara }}</strong>
+        <p v-for="para in paragraphs">{{ para }}</p>
+        <social-media></social-media>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import SocialMedia from './SocialMedia';
+import Sidebar from './Sidebar';
 
 export default {
   name: 'home',
@@ -27,7 +31,8 @@ export default {
     };
   },
   components: {
-    SocialMedia
+    SocialMedia,
+    Sidebar
   }
 };
 

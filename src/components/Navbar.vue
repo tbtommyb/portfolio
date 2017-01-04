@@ -2,7 +2,7 @@
   <nav>
     <ul>
       <li class="nav-item" v-for="link of navLinks">
-        <a :href="link.path">{{ link.title }}</a>
+        <router-link :to="link.path">{{ link.title }}</router-link>
       </li>
   </nav>
 </template>
@@ -13,8 +13,8 @@ export default {
   data () {
     return {
       navLinks: [
-        { path: "index.html", title: "Home" },
-        { path: "portfolio.html", title: "Portfolio"}
+        { path: "/", title: "Home" },
+        { path: "portfolio/0", title: "Portfolio"}
       ]
     };
   }

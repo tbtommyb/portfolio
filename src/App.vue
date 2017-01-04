@@ -1,26 +1,21 @@
 <template>
   <div id="app">
-    <sidebar></sidebar>
     <navbar></navbar>
     <div class="container">
-      <home></home>
+      <router-view></router-view>
     </div>
   </div>
 </template>
 
 <script>
-import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-import SocialMedia from './components/SocialMedia';
 
 export default {
   name: 'app',
   components: {
-    Sidebar,
     Navbar,
-    Home,
-    SocialMedia
+    Home
   }
 }
 </script>
