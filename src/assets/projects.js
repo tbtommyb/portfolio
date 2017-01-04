@@ -2,7 +2,10 @@ export default
 [
   {
     title: 'Concertspot',
-    projectSrc: 'https://www.concertspot.co.uk',
+    links: [
+      {title: 'Web', path: 'https://www.concertspot.co.uk'},
+      {title: 'GitHub', path: 'https://github.com/tbtommyb/concertspot'}
+    ],
     imgSrc: require('../assets/images/concertspot-narrow.jpg'),
     firstPara: 'Lots of info about the project. Lots of info about the project. Lots of info about the project. Lots of info about the project. Lots of info about the project. ',
     paragraphs: [
@@ -12,7 +15,10 @@ export default
   },
   {
     title: 'OxGrow',
-    projectSrc: 'https://www.oxgrow.org',
+    links: [
+      {title: 'Web', path: 'https://www.oxgrow.org'},
+      {title: 'GitHub', path: 'https://github.com/tbtommyb/oxgrow'}
+    ],
     imgSrc: require('../assets/images/oxgrow-narrow.jpg'),
     firstPara: 'Lots of info about the project. Lots of info about the project. Lots of info about the project. Lots of info about the project. Lots of info about the project. ',
     paragraphs: [
@@ -22,7 +28,10 @@ export default
   },
   {
     title: 'Wedding',
-    projectSrc: 'https://www.tomandgeorgie.co.uk',
+    links: [
+      {title: 'Web', path: 'https://www.tomandgeorgie.co.uk'},
+      {title: 'GitHub', path: 'https://github.com/tbtommyb/wedding'}
+    ],
     imgSrc: require('../assets/images/wedding-narrow.jpg'),
     firstPara: 'Lots of info about the project. Lots of info about the project. Lots of info about the project. Lots of info about the project. Lots of info about the project. ',
     paragraphs: [
@@ -32,7 +41,10 @@ export default
   },
   {
     title: 'Number one app',
-    projectSrc: 'https://www.number-oneapp.herokuapp.com',
+    links: [
+      {title: 'Web', path: 'https://www.number-oneapp.herokuapp.com'},
+      {title: 'GitHub', path: 'https://github.com/tbtommyb/number-one'}
+    ],
     imgSrc: require('../assets/images/number-one-narrow.jpg'),
     firstPara: 'Lots of info about the project. Lots of info about the project. Lots of info about the project. Lots of info about the project. Lots of info about the project. ',
     paragraphs: [

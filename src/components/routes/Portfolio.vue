@@ -2,7 +2,7 @@
   <div>
     <sidebar
       :imgSrc="currentProject.imgSrc"></sidebar>
-    <div class="home content">
+    <div class="portfolio content">
       <direction-buttons :next="next" :previous="previous"></direction-buttons>
       <header>
         <h1>Portfolio</h1>
@@ -11,6 +11,11 @@
         </a>
       </header>
       <div class="content-col">
+          <ul class="portfolio-links">
+            <li class="link link-item animate" v-for="link in currentProject.links">
+              <a :href="link.path">{{link.title}}</a>
+            </li>
+          </ul>
         <strong>{{ currentProject.firstPara }}</strong>
         <p v-for="para in currentProject.paragraphs">{{ para }}</p>
       </div>
@@ -52,19 +57,25 @@ export default {
 
 <style>
 
-.heading-link h2 {
+h2 {
   font-size: 4em;
   font-weight: 300;
 }
 
+.portfolio-links {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+}
+
 @media (max-width: 600px) {
-  .heading-link h2 {
+  h2 {
     font-size: 2.5em;
   }
 }
 
 @media (max-width: 500px) {
-  .heading-link h2 {
+  h2 {
     font-size: 2em;
   }
 }
