@@ -14,7 +14,7 @@ export default {
     return {
       navLinks: [
         { path: "/", title: "Home" },
-        { path: "portfolio/0", title: "Portfolio"}
+        { path: "/portfolio/0", title: "Portfolio"}
       ]
     };
   }
