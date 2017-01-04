@@ -6,16 +6,16 @@
       <direction-buttons :next="next" :previous="previous"></direction-buttons>
       <header>
         <h1>Portfolio</h1>
-        <a class="heading-link" :href="currentProject.projectSrc">
-          <h2>{{ currentProject.title }}</h2>
-        </a>
+        <transition name="slide" mode="out-in">
+          <h2 :key="$route.params.id">{{ currentProject.title }}</h2>
+        </transition>
       </header>
       <div class="content-col">
-          <ul class="portfolio-links">
-            <li class="link link-item animate" v-for="link in currentProject.links">
-              <a :href="link.path">{{link.title}}</a>
-            </li>
-          </ul>
+        <ul class="portfolio-links">
+          <li class="link link-item animate" v-for="link in currentProject.links">
+            <a :href="link.path">{{link.title}}</a>
+          </li>
+        </ul>
         <strong>{{ currentProject.firstPara }}</strong>
         <p v-for="para in currentProject.paragraphs">{{ para }}</p>
       </div>
@@ -78,6 +78,19 @@ h2 {
   h2 {
     font-size: 2em;
   }
+}
+
+.slide-enter-active {
+  transition: all .2s ease;
+}
+.slide-leave-active {
+  transition: all .2s ease;
+}
+.slide-enter {
+  transform: translateX(-200px);
+}
+.slide-leave-active {
+  transform: translateX(1200px);
 }
 
 </style>
