@@ -1,28 +1,65 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+    <sidebar></sidebar>
+    <navbar></navbar>
+    <div class="container">
+      <home></home>
+    </div>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import Sidebar from './components/Sidebar';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import SocialMedia from './components/SocialMedia';
 
 export default {
   name: 'app',
   components: {
-    Hello
+    Sidebar,
+    Navbar,
+    Home,
+    SocialMedia
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  font-family: 'Muli';
+  font-size: 1.1em;
+}
+
+h1,
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 4em;
+  font-weight: 300;
+}
+
+strong {
+  font-weight: 700;
+  font-family: 'Montserrat';
+  font-size: 1.2em;
+}
+
 </style>
