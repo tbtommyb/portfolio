@@ -1,11 +1,11 @@
 <template>
   <div class="direction">
-    <div class="btn direction left">
+    <div class="btn direction left animate">
       <span class="arrow">
         <router-link :to="previousPath()">&lt;</router-link>
       </span>
     </div>
-    <div class="btn direction right">
+    <div class="btn direction right animate">
       <span class="arrow">
         <router-link :to="nextPath()">&gt;</router-link>
       </span>
@@ -40,7 +40,7 @@ export default {
 .btn.direction {
   position: fixed;
   text-align: center;
-  top: 50%;
+  top: 47%;
 }
 
 .btn.direction.right {

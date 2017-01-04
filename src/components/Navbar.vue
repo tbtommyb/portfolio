@@ -1,7 +1,7 @@
 <template>
   <nav>
     <ul>
-      <li class="nav-item" v-for="link of navLinks">
+      <li class="link nav-item animate" v-for="link of navLinks">
         <router-link :to="link.path">{{ link.title }}</router-link>
       </li>
   </nav>
@@ -28,21 +28,8 @@ nav {
   right: 5%
 }
 
-.nav-item {
-  list-style-type: none;
-  display: inline-block;
+.link.nav-item {
   margin: 0 1.2em;
-  border-bottom: 2px solid black;
-  padding-bottom: 4px;
 }
 
-.nav-item a {
-  text-decoration: none;
-  color: black;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.nav-item a:hover {
-  color: red;
-}
 </style>

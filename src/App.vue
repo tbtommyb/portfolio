@@ -67,6 +67,28 @@ strong {
   margin: 5% 2% 0 24%;
 }
 
+.link {
+  list-style-type: none;
+  display: inline-block;
+  border-bottom: 2px solid black;
+  padding-bottom: 4px;
+  margin: 0 .5em 0 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.link a {
+  text-decoration: none;
+  color: black;
+}
+
+.link a:hover {
+  color: red;
+}
+
+.animate a {
+  transition: color .3s ease;
+}
+
 @media (max-width: 600px) {
   header h1 {
     font-size: 4em;
