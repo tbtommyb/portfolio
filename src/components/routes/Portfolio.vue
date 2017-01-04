@@ -19,9 +19,9 @@
 </template>
 
 <script>
-import Sidebar from './Sidebar';
-import DirectionButtons from './DirectionButtons';
-import projects from '../assets/projects';
+import Sidebar from '../Sidebar';
+import DirectionButtons from '../DirectionButtons';
+import projects from '../../assets/projects';
 
 export default {
   name: 'portfolio',
@@ -50,39 +50,14 @@ export default {
 
 </script>
 
-<style scoped>
-
-header {
-  overflow-x: hidden;
-}
-
-.heading-link {
-  text-decoration: none;
-  color: red;
-}
+<style>
 
 .heading-link h2 {
   font-size: 4em;
-}
-
-.content {
-  margin: 0 5%;
-  margin-top: 12%;
-}
-
-.home.content {
-  margin-left: 24%;
-}
-
-.content-col {
-  margin: 5% 2% 0 24%;
+  font-weight: 300;
 }
 
 @media (max-width: 600px) {
-  .heading-link h1 {
-    font-size: 4em;
-  }
-
   .heading-link h2 {
     font-size: 2.5em;
   }
@@ -91,10 +66,6 @@ header {
 @media (max-width: 500px) {
   .heading-link h2 {
     font-size: 2em;
-  }
-
-  .content-col {
-    margin: 5% 2%;
   }
 }
 
