@@ -87,7 +87,7 @@ h2 {
   transition: all .2s ease;
 }
 .slide-enter {
-  transform: translateX(-200px);
+  transform: translateX(-1200px);
 }
 .slide-leave-active {
   transform: translateX(1200px);
