@@ -1,6 +1,6 @@
 <template>
   <div>
-    <sidebar></sidebar>
+    <sidebar :imgSrc="currentProject.imgSrc"></sidebar>
     <div class="home content">
       <header>
         <h1>Portfolio</h1>
@@ -37,7 +37,8 @@ export default {
     return {
       projects: [
         {
-          title: 'Concertsport',
+          title: 'Concertspot',
+          imgSrc: require('../assets/images/concertspot-narrow.jpg'),
           firstPara: 'Lots of info about the project. Lots of info about the project. Lots of info about the project. Lots of info about the project. Lots of info about the project. ',
           paragraphs: [
             'Tom is going to write lots of interesting things about web development and why you should give him a job.',
@@ -46,6 +47,7 @@ export default {
         },
         {
           title: 'OxGrow',
+          imgSrc: require('../assets/images/oxgrow-narrow.jpg'),
           firstPara: 'Lots of info about the project. Lots of info about the project. Lots of info about the project. Lots of info about the project. Lots of info about the project. ',
           paragraphs: [
             'Tom is going to write lots of interesting things about web development and why you should give him a job.',
@@ -54,6 +56,7 @@ export default {
         },
         {
           title: 'Wedding',
+          imgSrc: require('../assets/images/number-one-narrow.jpg'),
           firstPara: 'Lots of info about the project. Lots of info about the project. Lots of info about the project. Lots of info about the project. Lots of info about the project. ',
           paragraphs: [
             'Tom is going to write lots of interesting things about web development and why you should give him a job.',
