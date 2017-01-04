@@ -2,12 +2,12 @@
   <div class="direction">
     <div class="btn direction left">
       <span class="arrow">
-        <router-link :to="previousPath">&lt;</router-link>
+        <router-link :to="previousPath()">&lt;</router-link>
       </span>
     </div>
     <div class="btn direction right">
       <span class="arrow">
-        <router-link :to="nextPath">&gt;</router-link>
+        <router-link :to="nextPath()">&gt;</router-link>
       </span>
     </div>
   </div>
@@ -17,7 +17,7 @@
 export default {
   name: 'direction-buttons',
   props: ['previous', 'next'],
-  computed: {
+  methods: {
     nextPath() {
       return `/portfolio/${this.next}`;
     },
@@ -38,15 +38,16 @@ export default {
 }
 
 .btn.direction {
-  position: absolute;
+  position: fixed;
+  text-align: center;
   top: 50%;
 }
 
 .btn.direction.right {
-  right: 4%;
+  right: .2em;
 }
 .btn.direction.left {
-  left: 4%;
+  left: .2em;
 }
 
 .arrow {
@@ -61,5 +62,21 @@ export default {
 
 .arrow a:hover {
   color: red;
+}
+
+@media (max-width: 500px) {
+  .btn.direction {
+    top: 10%;
+  }
+}
+
+@media (max-width: 600px) {
+  .btn.direction.left {
+    left: .1em;
+  }
+
+  .btn.direction.right {
+    right: .1em;
+  }
 }
 </style>

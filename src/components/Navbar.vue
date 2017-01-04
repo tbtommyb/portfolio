@@ -23,7 +23,7 @@ export default {
 
 <style>
 nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 5%
 }

@@ -38,7 +38,7 @@ export default {
 
 </script>
 
-<style scoped>
+<style>
 
 .content {
   margin: 0 5%;
@@ -51,5 +51,15 @@ export default {
 
 .content-col {
   margin: 5% 2% 0 24%;
+}
+
+@media (max-width: 500px) {
+  .home.content {
+    margin: 2% !important;
+    margin-top: -15% !important;
+  }
+  .content-col {
+    margin: 2%;
+  }
 }
 </style>
