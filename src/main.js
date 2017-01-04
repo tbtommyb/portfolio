@@ -3,8 +3,8 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from './App';
-import Home from './components/Home';
-import Portfolio from './components/Portfolio';
+import Home from './components/routes/Home';
+import Portfolio from './components/routes/Portfolio';
 
 Vue.use(VueRouter);
 
