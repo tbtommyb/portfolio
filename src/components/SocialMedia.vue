@@ -1,7 +1,7 @@
 <template>
   <div class="social">
     <ul>
-      <li class="social-link" v-for="link of socialLinks">
+      <li class="social-link animate" v-for="link of socialLinks">
         <a :href="link.path">
           <svg width="96" height="96">
             <image :xlink:href="link.svg" :src="link.png" width="96" height="96" />
@@ -59,7 +59,18 @@ ul {
   display: inline-block;
   width: 40px;
   height: 40px;
-  margin-right: .5em;
+  box-sizing: content-box;
+  border-radius: 2px;
+  border: 2px solid white;
+  margin: 4px 10px 4px 4px;
+}
+
+.social-link:hover {
+  border: 2px solid red;
+}
+
+.social-link.animate {
+  transition: border .3s ease;
 }
 
 svg,
