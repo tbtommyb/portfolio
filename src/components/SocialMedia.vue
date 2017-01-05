@@ -28,7 +28,7 @@ export default {
 <style scoped>
 
 .social {
-  margin-top: 3em;
+  margin-top: 1em;
 }
 
 ul {
