@@ -13,32 +13,13 @@
 </template>
 
 <script>
+import socialLinks from '../assets/social';
+
 export default {
   name: 'social-media',
   data () {
     return {
-      socialLinks: [
-        {
-          path: 'http://www.mail.com',
-          svg: require('../assets/icons/mail.svg'),
-          png: require('../assets/icons/mail.png')
-        },
-        {
-          path: 'http://www.github.com',
-          svg: require('../assets/icons/github.svg'),
-          png: require('../assets/icons/github.png')
-        },
-        {
-          path: 'http://www.linkedin.com',
-          svg: require('../assets/icons/linkedin.svg'),
-          png: require('../assets/icons/linkedin.png')
-        },
-        {
-          path: 'http://www.twitter.com',
-          svg: require('../assets/icons/twitter.svg'),
-          png: require('../assets/icons/twitter.svg')
-        }
-      ]
+      socialLinks
     };
   }
 };
