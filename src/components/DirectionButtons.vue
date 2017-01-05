@@ -2,14 +2,14 @@
   <div class="direction">
     <div class="btn direction left animate">
       <span class="arrow" v-on:click="setDirection('left')">
-        <router-link :to="previousPath()">
+        <router-link :to="previousPath()" aria-label="previous">
           &lt;
         </router-link>
       </span>
     </div>
     <div class="btn direction right animate">
       <span class="arrow" v-on:click="setDirection('right')">
-        <router-link :to="nextPath()">
+        <router-link :to="nextPath()" aria-label="next">
           &gt;
         </router-link>
       </span>

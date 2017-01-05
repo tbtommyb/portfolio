@@ -1,6 +1,8 @@
 <template>
   <div>
-    <sidebar></sidebar>
+    <sidebar
+      imgAlt="">
+    </sidebar>
     <div class="home content">
       <header>
         <h1 v-for="line in headline">{{ line }}</h1>

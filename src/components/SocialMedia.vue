@@ -3,6 +3,7 @@
     <ul>
       <li class="social-link animate" v-for="link of socialLinks">
         <a :href="link.path">
+          <p class="sr-only">{{ link.type }}</p>
           <svg width="40" height="40">
             <image :xlink:href="link.svg" :src="link.png" width="40" height="40" />
           </svg>

@@ -1,7 +1,9 @@
 <template>
   <div>
     <sidebar
-      :imgSrc="currentProject.imgSrc"></sidebar>
+      :imgAlt="currentProject.imgAlt"
+      :imgSrc="currentProject.imgSrc">
+    </sidebar>
     <div class="portfolio content">
       <direction-buttons
         :next="next"

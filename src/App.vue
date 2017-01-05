@@ -89,6 +89,18 @@ strong {
   transition: color .3s ease;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+
 @media (max-width: 600px) {
   header h1 {
     font-size: 4em;

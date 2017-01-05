@@ -1,13 +1,13 @@
 <template>
   <div id="sidebar">
-    <img class="sidebar-main-img img-pale-fade" :src="imgSrc">
+    <img class="sidebar-main-img img-pale-fade" :src="imgSrc" :alt="imgAlt">
   </div>
 </template>
 
 <script>
 export default {
   name: 'sidebar',
-  props: ['imgSrc'],
+  props: ['imgSrc', 'imgAlt'],
   data () { return {}; }
 }
 </script>

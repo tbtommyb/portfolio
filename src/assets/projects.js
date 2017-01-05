@@ -7,6 +7,7 @@ export default
       {title: 'GitHub', path: 'https://github.com/tbtommyb/concertspot'}
     ],
     imgSrc: require('../assets/images/concertspot-narrow.jpg'),
+    imgAlt: 'Concertspot page screenshot',
     summary: 'A gig/clubnight recommendation app built on top of the Skiddle APIs using React',
     paragraphs: [
       'The front end code uses React, Redux, Webpack and Sass.',
@@ -20,6 +21,7 @@ export default
       {title: 'GitHub', path: 'https://github.com/tbtommyb/oxgrow'}
     ],
     imgSrc: require('../assets/images/oxgrow-narrow.jpg'),
+    imgAlt: 'OxGrow page screenshot',
     summary: 'Wordpress-backed website for a grassroots environmental group',
     paragraphs: [
       'I designed this site to be bright and inviting to new members while easy to maintain by volunteers.',
@@ -33,6 +35,7 @@ export default
       {title: 'GitHub', path: 'https://github.com/tbtommyb/wedding'}
     ],
     imgSrc: require('../assets/images/wedding-narrow.jpg'),
+    imgAlt: 'Wedding page screenshot',
     summary: 'A website for my wedding, providing guests with information and the option to RSVP online',
     paragraphs: [
       'My aim was to create a simple, attractive site with minimal bloat so I used Hugo to generate a static site and served it directly with Nginx.',
@@ -46,6 +49,7 @@ export default
       {title: 'GitHub', path: 'https://github.com/tbtommyb/number-one'}
     ],
     imgSrc: require('../assets/images/number-one-narrow.jpg'),
+    imgAlt: 'Number one app page screenshot',
     summary: 'Demo project to show what was number one on your birthday (in the UK)',
     paragraphs: [
       'It uses jQuery on the front end and Express.js and Sqlite on the back end.',
