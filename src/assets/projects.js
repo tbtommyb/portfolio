@@ -31,7 +31,7 @@ export default
   {
     title: 'Wedding',
     links: [
-      {title: 'Web', path: 'https://www.tomandgeorgie.co.uk'},
+      {title: 'Web', path: 'http://www.tomandgeorgie.co.uk'},
       {title: 'GitHub', path: 'https://github.com/tbtommyb/wedding'}
     ],
     imgSrc: require('../assets/images/wedding-narrow.jpg'),
@@ -45,7 +45,7 @@ export default
   {
     title: 'Number one app',
     links: [
-      {title: 'Web', path: 'https://www.number-oneapp.herokuapp.com'},
+      {title: 'Web', path: 'http://www.number-oneapp.herokuapp.com'},
       {title: 'GitHub', path: 'https://github.com/tbtommyb/number-one'}
     ],
     imgSrc: require('../assets/images/number-one-narrow.jpg'),
