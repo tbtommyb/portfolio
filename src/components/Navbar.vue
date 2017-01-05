@@ -32,6 +32,7 @@ export default {
 
 <style>
 nav {
+  background-color: white;
   position: fixed;
   top: 0;
   right: 5%
