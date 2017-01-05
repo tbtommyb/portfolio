@@ -96,9 +96,9 @@ strong {
 }
 
 @media (max-width: 500px) {
-  .home.content {
-    margin: 2% !important;
-    margin-top: -50px !important;
+  .content {
+    margin: 2%;
+    margin-top: -50px;
   }
   .content-col {
     margin: 2%;
