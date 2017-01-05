@@ -3,8 +3,8 @@
     <ul>
       <li class="social-link animate" v-for="link of socialLinks">
         <a :href="link.path">
-          <svg width="96" height="96">
-            <image :xlink:href="link.svg" :src="link.png" width="96" height="96" />
+          <svg width="40" height="40">
+            <image :xlink:href="link.svg" :src="link.png" width="40" height="40" />
           </svg>
         </a>
       </li>
