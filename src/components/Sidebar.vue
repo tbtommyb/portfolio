@@ -37,6 +37,7 @@ export default {
     width: initial;
   }
 }
+
 @media (max-width: 500px) {
   #sidebar {
     position: relative;
