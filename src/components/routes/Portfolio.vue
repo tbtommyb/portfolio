@@ -16,8 +16,10 @@
             <a :href="link.path">{{link.title}}</a>
           </li>
         </ul>
-        <p><strong>{{ currentProject.summary }}</strong></p>
-        <p v-for="para in currentProject.paragraphs">{{ para }}</p>
+        <transition-group name="hide">
+          <p :key="$route.params.id"><strong>{{ currentProject.summary }}</strong></p>
+          <p :key="$route.params.id" v-for="para in currentProject.paragraphs">{{ para }}</p>
+        </transition-group>
       </div>
     </div>
   </div>
@@ -93,4 +95,16 @@ h2 {
   transform: translateX(1200px);
 }
 
+.hide-enter-active {
+  transition-delay: .3s;
+}
+.hide-leave-active {
+  transition-delay: .2s;
+}
+.hide-enter {
+  visibility: hidden;
+}
+.hide-leave-active {
+  visibility: hidden;
+}
 </style>
