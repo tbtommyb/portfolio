@@ -28,7 +28,7 @@ export default {
 <style scoped>
 
 .social {
-  margin-top: 1em;
+  margin-top: 3em;
 }
 
 ul {
@@ -46,6 +46,9 @@ ul {
   margin: 4px 10px 4px 4px;
 }
 
+.social-link:first-of-type {
+  margin-left: 0;
+}
 .social-link:hover {
   border: 2px solid red;
 }
