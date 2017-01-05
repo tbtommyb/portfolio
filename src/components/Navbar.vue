@@ -44,7 +44,7 @@ nav {
 
 @media (max-width: 500px) {
   nav {
-    background-color: none;
+    background-color: transparent;
   }
 }
 
