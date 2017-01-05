@@ -4,6 +4,9 @@
       <li class="link nav-item animate" v-for="link of navLinks">
         <router-link :to="link.path">{{ link.title }}</router-link>
       </li>
+      <li class="link nav-item animate">
+        <a href="https://github.com/tbtommyb/CV">CV</a>
+      </li>
   </nav>
 </template>
 
@@ -13,8 +16,14 @@ export default {
   data () {
     return {
       navLinks: [
-        { path: "/", title: "Home" },
-        { path: "/portfolio/0", title: "Portfolio"}
+        {
+          path: "/",
+          title: "Home"
+        },
+        {
+          path: "/portfolio/0",
+          title: "Portfolio"
+        }
       ]
     };
   }
