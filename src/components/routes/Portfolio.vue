@@ -3,10 +3,14 @@
     <sidebar
       :imgSrc="currentProject.imgSrc"></sidebar>
     <div class="portfolio content">
-      <direction-buttons :next="next" :previous="previous"></direction-buttons>
+      <direction-buttons
+        :next="next"
+        :previous="previous"
+        v-on:setDirection="updateTransitionClass">
+      </direction-buttons>
       <header>
         <h1>Portfolio</h1>
-        <transition name="slide" mode="out-in">
+        <transition :name="transitionClass" mode="out-in">
           <h2 :key="$route.params.id">{{ currentProject.title }}</h2>
         </transition>
       </header>
@@ -32,6 +36,11 @@ import projects from '../../assets/projects';
 
 export default {
   name: 'portfolio',
+  methods: {
+    updateTransitionClass(direction) {
+      this.transitionClass = `slide-${direction}`;
+    }
+  },
   computed: {
     currentProject() {
       return this.projects[this.$route.params.id]
@@ -46,6 +55,7 @@ export default {
   },
   data () {
     return {
+      transitionClass: 'slide-left',
       projects
     };
   },
@@ -82,17 +92,25 @@ h2 {
   }
 }
 
-.slide-enter-active {
+.slide-left-enter-active,
+.slide-right-enter-active {
   transition: all .2s ease;
 }
-.slide-leave-active {
+.slide-left-leave-active,
+.slide-right-leave-active {
   transition: all .2s ease;
 }
-.slide-enter {
+.slide-right-enter {
   transform: translateX(-1200px);
 }
-.slide-leave-active {
+.slide-right-leave-active {
   transform: translateX(1200px);
+}
+.slide-left-enter {
+  transform: translateX(1200px);
+}
+.slide-left-leave-active {
+  transform: translateX(-1200px);
 }
 
 .hide-enter-active {

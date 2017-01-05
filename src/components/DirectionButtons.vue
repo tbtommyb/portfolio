@@ -1,13 +1,17 @@
 <template>
   <div class="direction">
     <div class="btn direction left animate">
-      <span class="arrow">
-        <router-link :to="previousPath()">&lt;</router-link>
+      <span class="arrow" v-on:click="setDirection('left')">
+        <router-link :to="previousPath()">
+          &lt;
+        </router-link>
       </span>
     </div>
     <div class="btn direction right animate">
-      <span class="arrow">
-        <router-link :to="nextPath()">&gt;</router-link>
+      <span class="arrow" v-on:click="setDirection('right')">
+        <router-link :to="nextPath()">
+          &gt;
+        </router-link>
       </span>
     </div>
   </div>
@@ -18,6 +22,9 @@ export default {
   name: 'direction-buttons',
   props: ['previous', 'next'],
   methods: {
+    setDirection(direction) {
+      this.$emit('setDirection', direction);
+    },
     nextPath() {
       return `/portfolio/${this.next}`;
     },
