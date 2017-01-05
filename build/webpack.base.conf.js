@@ -69,12 +69,16 @@ module.exports = {
         loader: 'json'
       },
       {
-        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        test: /\.(png|jpe?g|gif|svg|ico)(\?.*)?$/,
         loader: 'url',
         query: {
           limit: 10000,
           name: utils.assetsPath('img/[name].[hash:7].[ext]')
         }
+      },
+      {
+        test: /\.ico$/,
+        loader: 'file?name=[name].[ext]'
       },
       {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,

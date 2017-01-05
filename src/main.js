@@ -5,6 +5,7 @@ import VueRouter from 'vue-router';
 import App from './App';
 import Home from './components/routes/Home';
 import Portfolio from './components/routes/Portfolio';
+import './assets/icons/favicon.ico';
 
 Vue.use(VueRouter);
 
