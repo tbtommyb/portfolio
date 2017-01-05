@@ -16,7 +16,7 @@
             <a :href="link.path">{{link.title}}</a>
           </li>
         </ul>
-        <strong>{{ currentProject.firstPara }}</strong>
+        <p><strong>{{ currentProject.summary }}</strong></p>
         <p v-for="para in currentProject.paragraphs">{{ para }}</p>
       </div>
     </div>

@@ -6,7 +6,7 @@
         <h1 v-for="line in headline">{{ line }}</h1>
       </header>
       <div class="content-col">
-        <strong>{{ summaryPara }}</strong>
+        <p><strong>{{ summary }}</strong></p>
         <p v-for="para in paragraphs">{{ para }}</p>
         <social-media></social-media>
       </div>
