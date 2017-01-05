@@ -41,7 +41,7 @@ h2 {
 }
 
 header {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 header h1 {
