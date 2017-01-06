@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+npm run build
+cp -R dist/ ../tbtommyb.github.io
+cd ../tbtommyb.github.io
+pwd
+git add .
+git commit -m "Update build"
+git push origin master
