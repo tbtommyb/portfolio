@@ -1,27 +1,5 @@
-# portfolio
+# Portfolio
 
-> My personal portfolio
+This is the repo for my [personal portfolio](https://tbtommyb.github.io). The actual repo linked to Github Pages can be found [here](https://github.com/tbtommyb/tbtommyb.github.io) (due to the need to serve from a sub-directory).
 
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Built using vue.js and Webpack, based on the [template here](http://vuejs-templates.github.io/webpack/).
