@@ -17,8 +17,7 @@ export default
   {
     title: 'OxGrow',
     links: [
-      {title: 'Web', path: 'https://www.oxgrow.org'},
-      {title: 'GitHub', path: 'https://github.com/tbtommyb/oxgrow'}
+      {title: 'Web', path: 'https://www.oxgrow.org'}
     ],
     imgSrc: require('../assets/images/oxgrow-narrow.jpg'),
     imgAlt: 'OxGrow page screenshot',
@@ -45,7 +44,7 @@ export default
   {
     title: 'Number one app',
     links: [
-      {title: 'Web', path: 'http://www.number-oneapp.herokuapp.com'},
+      {title: 'Web', path: 'http://number-oneapp.herokuapp.com'},
       {title: 'GitHub', path: 'https://github.com/tbtommyb/number-one'}
     ],
     imgSrc: require('../assets/images/number-one-narrow.jpg'),
