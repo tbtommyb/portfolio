@@ -45,7 +45,7 @@ export default
   {
     title: 'Number one app',
     links: [
-      {title: 'Web', path: 'http://www.number-oneapp.herokuapp.com'},
+      {title: 'Web', path: 'http://number-oneapp.herokuapp.com'},
       {title: 'GitHub', path: 'https://github.com/tbtommyb/number-one'}
     ],
     imgSrc: require('../assets/images/number-one-narrow.jpg'),
