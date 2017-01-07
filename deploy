@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 npm run build
+rm -rf ../tbtommyb.github.io/static
 cp -R dist/ ../tbtommyb.github.io
 cd ../tbtommyb.github.io
 pwd
