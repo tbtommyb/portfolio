@@ -17,8 +17,7 @@ export default
   {
     title: 'OxGrow',
     links: [
-      {title: 'Web', path: 'https://www.oxgrow.org'},
-      {title: 'GitHub', path: 'https://github.com/tbtommyb/oxgrow'}
+      {title: 'Web', path: 'https://www.oxgrow.org'}
     ],
     imgSrc: require('../assets/images/oxgrow-narrow.jpg'),
     imgAlt: 'OxGrow page screenshot',
