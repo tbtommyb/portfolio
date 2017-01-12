@@ -7,9 +7,17 @@
 
 <script>
 import Navbar from './components/Navbar';
+import projects from './assets/projects.js';
 
 export default {
   name: 'app',
+  mounted () {
+    /* Preload project images */
+    projects.map(project => {
+      let img = new Image();
+      img.src = project.imgSrc;
+    })
+  },
   components: {
     Navbar
   }
