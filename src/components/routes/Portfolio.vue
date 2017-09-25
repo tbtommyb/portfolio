@@ -40,7 +40,7 @@ export default {
     },
     previous() {
       const previous = parseInt(this.$route.params.id, 10) - 1;
-      return previous < 0 ? this.projects.length - 1 : previous; 
+      return previous < 0 ? this.projects.length - 1 : previous;
     }
   },
   data () {

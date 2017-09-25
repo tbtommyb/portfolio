@@ -1,7 +1,7 @@
 export default [
   {
     type: 'Email',
-    path: 'mailto:thomasmbarrett1@gmail.com',
+    path: 'mailto:tom@tmjohnson.co.uk',
     svg: require('./icons/mail.svg'),
     png: require('./icons/mail.png')
   },
