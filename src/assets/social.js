@@ -13,7 +13,7 @@ export default [
   },
   {
     type: 'Linkedin',
-    path: 'https://linkedin.com/in/thomas-barrett-bb071041/',
+    path: 'https://www.linkedin.com/in/thomas-johnson-bb071041/',
     svg: require('./icons/linkedin.svg'),
     png: require('./icons/linkedin.png')
   },
