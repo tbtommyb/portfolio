@@ -1,9 +1,3 @@
 #!/usr/bin/env bash
 npm run build
-rm -rf ../tbtommyb.github.io/static
-cp -R dist/ ../tbtommyb.github.io
-cd ../tbtommyb.github.io
-pwd
-git add .
-git commit -m "Update build"
-git push origin master
+rsync -ravzP --delete /Users/thomasbarrett/coding/portfolio/dist/ -e 'ssh -i /Users/thomasbarrett/coding/aws/ireland-key-pair.pem' ubuntu@52.17.9.164:/home/ubuntu/portfolio
